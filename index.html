@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gouri.me</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Main Search Container -->
+    <div id="search-container" class="active">
+        <div class="search-box">
+            <!-- Cute Tenor GIF -->
+            <div style="width: 150px; margin: 0 auto 1rem;">
+                <div class="tenor-gif-embed" data-postid="11246632764297512466" data-share-method="host"
+                    data-aspect-ratio="1.23333" data-width="100%"><a
+                        href="https://tenor.com/view/cute-gif-11246632764297512466">Cute Sticker</a>from <a
+                        href="https://tenor.com/search/cute-stickers">Cute Stickers</a></div>
+                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            </div>
+            <h1>Who are you looking for?</h1>
+            <div class="input-wrapper">
+                <input type="text" id="name-input" placeholder="Write your first name here..." autocomplete="off">
+                <button id="search-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <p id="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Envelope Container -->
+    <div id="envelope-container">
+        <div class="envelope-wrapper" id="envelope">
+            <div class="envelope-hint">Click to Open!</div>
+            <div class="envelope"></div>
+            <div class="envelope-flap"></div>
+            <div class="letter">
+                <div class="letter-content">
+                    <div style="width: 120px; margin: 0 auto 1rem;">
+                        <div class="tenor-gif-embed" data-postid="7366848739041651714" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/cute-love-love-heart-heart-eyes-aww-gif-7366848739041651714">Cute Love Heart GIF</a>from <a href="https://tenor.com/search/cute+love-gifs">Cute Love GIFs</a></div>
+                        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                    </div>
+                    <h3>Dear Gouri,</h3>
+                    <p>Happy Birthday! 🎂🌸</p>
+                    <p>Today is your special day, and I just want you to know how truly grateful I am to have you in my life. You are one of those rare people who makes every room brighter just by walking in.</p>
+                    <p>Your smile, your energy, your kindness — everything about you is something worth celebrating. Not just today, but every single day.</p>
+                    <p>I hope this birthday brings you all the joy, love, and happiness you so freely give to everyone around you. May this year be your most beautiful one yet — full of new adventures, big laughs, and everything your heart desires.</p>
+                    <p>You deserve the whole world, Gouri. Never forget that.</p>
+                    <br>
+                    <p>With so much love and warm wishes,</p>
+                    <p><strong>Shivani 💖</strong></p>
+                </div>
+                <button class="continue-btn" id="continue-btn">Your some cute moments ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Container -->
+    <div id="gallery-container">
+        <header>
+            <h2>Happy Birthday, Gouri! 🎉</h2>
+            <p>Welcome to your secret gallery.</p>
+        </header>
+        <div class="masonry-grid" id="photo-grid">
+            <!-- Photos will be injected here via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Explosion Effect Layer -->
+    <div id="explosion-layer"></div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
